@@ -16,7 +16,6 @@ class CashRegister
     for i in 1..quantity
       @items << item
     end
-    price
   end
 
   def apply_discount
@@ -33,7 +32,7 @@ class CashRegister
   end
 
   def void_last_transaction
-    self.total - self.add_item(item, price, quantity = 1)
+
   end
 
 end
