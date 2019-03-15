@@ -22,6 +22,7 @@ class CashRegister
     if @discount != nil
       disc_total = self.total - ((@discount / 100.00) * self.total).to_i
       "After the discount, the total comes to $#{disc_total}."
+    end
   end
 
   def items
