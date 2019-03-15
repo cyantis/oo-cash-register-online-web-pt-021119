@@ -15,7 +15,7 @@ class CashRegister
     @latest_item = price * quantity
     self.total += @latest_item
     for i in 1..quantity
-      @items << item
+      self.items << item
     end
   end
 
